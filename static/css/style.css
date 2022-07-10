@@ -2,13 +2,13 @@ html {
 	overflow-y: scroll;
 }
 :root {
-	--bgcolor: rgb(40, 41, 40);
-	--fontcolor: rgb(180, 180, 180); 
-	--linkcolor: rgb(255, 140, 130); 
-	--hovercolor: rgb(255, 160, 150);
-	--visitedcolor: rgb(255, 130, 182); 
-	--precolor: #fff; 
-	--prebgcolor: #000;
+	--bgcolor: #141414;
+	--fgcolor: #f8f8f2; 
+	--accentcolor: #bd93f9; 
+	--linkcolor: #d97a98;
+	--hovercolor: #feb690;
+	--visitedcolor: #f174a8; 
+	--prebgcolor: #282a36;
 }
 body {
 	max-width:800px;
@@ -16,7 +16,7 @@ body {
 	padding:0 10px;
 	font-family: -apple-system-body, Courier, monospace;
     font-weight: 300;
-	color: var(--fontcolor); 
+	color: var(--fgcolor); 
 	background: var(--bgcolor);
 	font-size: 1.2em;
 
@@ -33,28 +33,49 @@ a:active {
 a:hover{
 	color: var(--hovercolor);
 }
-h1, h2, h3 {
-	line-height: 1.2;
-	font-weight: 400;
-
+a.site_header {
+	text-decoration: none
+}
+a.site_header:link {
+	color: var(--accentcolor);
+}
+a.site_header:visited {
+	color: var(--accentcolor);
+}
+a.site_header:active {
+	color: var(--accentcolor);
+}
+a.nav-bar {
+	text-transform: uppercase;
+	letter-spacing: -.02em;
+}
+.footer {
+	font-size: 0.8em;
 }
 h1 {
     font-family: -apple-system-headline, Courier, monospace;
- }
-h2 {
-	font-family: -apple-system-subheadline, Courier, monospace;
-    font-weight: var(--headerweight);
-    text-transform: uppercase;
-    letter-spacing: .2em;
-    color: rgb(220, 220, 220);
+    color: var(--accentcolor);
+    line-height: 1.2;
+}
+.site_header:after {
+    content:' ';
+    display:block;
+    border:1px solid var(--fgcolor);
+    border-radius:2px;
+    margin-top: 10px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+    -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+    -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
 }
 p > code {
-	color: var(--precolor); 
+	color: var(--fgcolor); 
 	background: var(--prebgcolor); 
 	padding:2px;
 }
 pre {
-	color: var(--precolor); 
+	color: var(--fgcolor); 
 	background: var(--prebgcolor); 
 	padding:24px; 
 	overflow-x: auto;
