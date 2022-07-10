@@ -1,5 +1,6 @@
 html {
 	overflow-y: scroll;
+	font-family: Courier, monospace;
 }
 :root {
 	--bgcolor: rgb(40, 41, 40);
@@ -10,13 +11,13 @@ html {
 	--precolor: #fff; 
 	--prebgcolor: #000;
 	--headerweight: 400;
+	--headerlineheight: 1.2;
 }
-body{
+body {
 	max-width:800px;
 	margin:40px auto;
 	padding:0 10px;
 	font: -apple-system-body;
-    font-family: Courier, monospace;
     font-weight: 300;
 	color:var(--fontcolor); 
 	background: var(--bgcolor);
@@ -33,16 +34,15 @@ a:active {
 a:hover{
 	color: var(--hovercolor);
 }
-h1,h2,h3 {
-	line-height:1.2;
-}
 h1 {
     font: -apple-system-headline;
     font-weight: var(--headerweight);
+    line-height: var(--headerlineheight);
  }
 h2 {
 	font: -apple-system-subheadline;
     font-weight: var(--headerweight);
+    line-height: var(--headerlineheight);
     text-transform: uppercase;
     letter-spacing: .2em;
     color: rgb(220, 220, 220);
