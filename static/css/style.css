@@ -1,5 +1,6 @@
 html {
 	overflow-y: scroll;
+	font-family: Courier, monospace;
 }
 :root {
 	--bgcolor: rgb(40, 41, 40);
@@ -14,8 +15,7 @@ body {
 	max-width:800px;
 	margin:40px auto;
 	padding:0 10px;
-	font: -apple-system-body;
-	font-family: Courier, monospace;
+	font-family: -apple-system-body;
     font-weight: 300;
 	color: var(--fontcolor); 
 	background: var(--bgcolor);
@@ -35,16 +35,15 @@ a:hover{
 	color: var(--hovercolor);
 }
 h1, h2, h3 {
-	font-family: Courier, monospace;
 	line-height: 1.2;
 	font-weight: 400;
 
 }
 h1 {
-    font: -apple-system-headline;
+    font-family: -apple-system-headline;
  }
 h2 {
-	font: -apple-system-subheadline;
+	font-family: -apple-system-subheadline;
     font-weight: var(--headerweight);
     text-transform: uppercase;
     letter-spacing: .2em;
@@ -71,7 +70,7 @@ article {
 	width: 100%;
 }
 figcaption {
-	font: -apple-system-caption;
+	font-family: -apple-system-caption;
 	text-align: center;
 	font-style: italic;
 }
