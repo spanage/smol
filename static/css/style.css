@@ -93,6 +93,8 @@ figcaption {
 	font-family: -apple-system-caption, Courier, monospace;
 	text-align: center;
 	font-style: italic;
+	font-size: 0.9em;
+	color: #ccc;
 }
 figure {
 	margin: auto;
